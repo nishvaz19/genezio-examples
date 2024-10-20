@@ -21,6 +21,8 @@ export class TaskController {
 
     const dbModels = [Task];
 
+    alert(process.env.DB_TABLE_NAME);
+    
     if (
       !process.env.DB_TABLE_NAME ||
       !process.env.DB_USERNAME ||
